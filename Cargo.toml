@@ -1,0 +1,19 @@
+[package]
+name = "simgrep"
+version = "1.67.1"
+edition = "2021"
+authors = ["Ben Pring"]
+description = "A simple grep command written in Rust with async"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-recursion = "1.0.2"
+camino = "1.1.2"
+clap = { version = "4.1.4", features = ["derive"] }
+colored = "2.0.0"
+content_inspector = "0.2.4"
+futures = "0.3.26"
+lazy_static = "1.4.0"
+rlimit = "0.9.1"
+tokio = { version = "1.25.0", features = ["full", "fs"] }
